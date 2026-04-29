@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATIN STORE - Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&family=Moul&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Khmer OS Battambang', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ផ្នែក Header ថ្មី */
+        .header {
+            background-color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        /* រូបពែងកាហ្វេដែលមានផ្សែង និងស្លាបព្រា */
+        .coffee-container {
+            position: relative;
+            font-size: 35px;
+            color: #5d4037;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* បង្កើតផ្សែងហុយ */
+        .steam {
+            position: absolute;
+            top: -15px;
+            font-size: 14px;
+            color: #bcaaa4;
+            animation: steamAnim 2s infinite ease-in-out;
+            opacity: 0;
+        }
+
+        @keyframes steamAnim {
+            0% { transform: translateY(0) scale(1); opacity: 0; }
+            50% { transform: translateY(-10px) scale(1.2); opacity: 0.7; }
+            100% { transform: translateY(-20px) scale(1.4); opacity: 0; }
+        }
+
+        .store-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #5d4037;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ក្បាច់អក្សរឈ្មោះហាង (Moul Font) */
+        .store-name {
+            margin-top: 15px;
+            font-family: 'Moul', serif;
+            font-size: 26px;
+            color: #5d4037;
+            letter-spacing: 1px;
+        }
+
+        /* រៀបចំកាតទំនិញ (រក្សាតាមកូដដើមរបស់អ្នក) */
+        .container {
+            padding: 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .item-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-container {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 12px;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #e67e22;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-wrapper">
+            <div class="coffee-container">
+                <div class="steam"><i class="fas fa-wind"></i></div>
+                <i class="fas fa-coffee"></i>
+                <div style="font-size: 10px; margin-top: -5px;">🥄</div> </div> 
+            
+            <img src="20260429_204649.png" alt="Logo" class="store-logo">
+            
+            <div class="coffee-container">
+                <div class="steam"><i class="fas fa-wind"></i></div>
+                <i class="fas fa-coffee"></i>
+                <div style="font-size: 10px; margin-top: -5px;">🥄</div>
+            </div>
+        </div>
+        <div class="store-name">KEO COFFE</div>
+    </div>
+
+    <div class="container">
+        <div class="item-card">
+            <div class="image-container">
+                <img src="ទាញយក.jpeg">
+            </div>
+            <div class="details">
+                <div class="name">ឈ្មោះភេសជ្ជៈ</div>
+                <div class="price">$1.50</div>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="image-container">
+                <img src="ទាញយក.jpeg">
+            </div>
+            <div class="details">
+                <div class="name">ឈ្មោះភេសជ្ជៈ</div>
+                <div class="price">$2.00</div>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <div class="image-container">
+                <img src="ទាញយក.jpeg">
+            </div>
+            <div class="details">
+                <div class="name">ឈ្មោះភេសជ្ជៈ</div>
+                <div class="price">$2.00</div>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <div class="image-container">
+                <img src="ទាញយក.jpeg">
+            </div>
+            <div class="details">
+                <div class="name">ឈ្មោះភេសជ្ជៈ</div>
+                <div class="price">$2.00</div>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <div class="image-container">
+                <img src="ទាញយក.jpeg">
+            </div>
+            <div class="details">
+                <div class="name">ឈ្មោះភេសជ្ជៈ</div>
+                <div class="price">$2.00</div>
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <div class="image-container">
+                <img src="ទាញយក.jpeg">
+            </div>
+            <div class="details">
+                <div class="name">ឈ្មោះភេសជ្ជៈ</div>
+                <div class="price">$2.00</div>
+            </div>
+        </div>
+        
+        </div>
+
+</body>
+</html>
